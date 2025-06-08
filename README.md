@@ -24,4 +24,6 @@
 | `kawra-daemon-windows.zip` | Windows Kawra daemon (for node/solo mining use) |
 | `Kawra Node install guide.txt` | Step-by-step guide to set up a full node |
 | `install a mining pool guide.txt` | Instructions to deploy a Kawra mining pool |
+| `kawra-source-code.tar.gz` | Kawra Source Code |
 | `Kawra tools/` | Utilities and scripts for blockchain maintenance |
+ 
