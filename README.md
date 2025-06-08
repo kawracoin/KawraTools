@@ -10,7 +10,7 @@
 - 🔎 Explorer: [https://explorer.kawra.org](https://explorer.kawra.org)
 - 📡 Node: [https://node1.kawra.org](https://node1.kawra.org)
 - 🛠️ Mining Pool: [https://pool.kawra.org](https://pool.kawra.org)
-- 💬 Discord: [[https://t.me/kawracoin](https://discord.gg/eFJ96wB7Kf)]([https://t.me/kawracoin](https://discord.gg/eFJ96wB7Kf))
+- 💬 Discord:  [https://discord.gg/eFJ96wB7Kf](https://discord.gg/eFJ96wB7Kf)
 
 ---
 
