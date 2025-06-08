@@ -1,6 +1,6 @@
 # Kawra (KWR)
 
-**Kawra** is a SHA-256 Proof-of-Work cryptocurrency with a limited supply,  and a fast, fair launch — designed for community-driven decentralization.
+**Kawra** is a SHA-256 Proof-of-Work cryptocurrency with a limited supply,  and a fast, fair launch — designed for community-driven decentralisation.
 
 ---
 
