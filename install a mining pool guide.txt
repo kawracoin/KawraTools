@@ -11,7 +11,7 @@ sudo apt-get install unzip redis-server npm git nano cmake screen -y
 
 Download the Linux daemon for your wallet with the following command:
 
-wget "https://https://www.kawra.org/kawra-daemon-linux.tar.gz" -O kawra-daemon-linux.tar.gz
+wget "https://www.kawra.org/kawra-daemon-linux.tar.gz" -O kawra-daemon-linux.tar.gz
 
 Extract the tar file with the following command:
 
@@ -19,7 +19,7 @@ tar -xzvf kawra-daemon-linux.tar.gz
 
 Download the Linux tools for your wallet with the following command:
 
-wget "https://https://www.kawra.org/kawra-qt-linux.tar.gz" -O kawra-qt-linux.tar.gz
+wget "https://www.kawra.org/kawra-qt-linux.tar.gz" -O kawra-qt-linux.tar.gz
 
 Extract the tar file with the following command:
 
