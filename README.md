@@ -1,3 +1,8 @@
+<p align="center">
+  <img src="https://www.kawra.org/logo.png" alt="Kawra Logo" width="200"/>
+</p>
+
+
 # KawraTools – Wallets, Daemons & Setup Files
 
 **Kawra** is a SHA-256 Proof-of-Work cryptocurrency built on Bitcoin Core 25.0. Designed with simplicity, fairness, and decentralization in mind, Kawra has a limited fixed supply and a predictable emission schedule.
