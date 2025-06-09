@@ -63,7 +63,7 @@ Want to build Kawra from source?
 
 Use `kawra-source-code.tar.gz` from this repo or go to the official source repo:
 
-👉 [Kawra Source on GitHub](https://github.com/kawracoin/kawra)
+👉 [Kawra Source on GitHub](https://github.com/kawracoin/Kawra-Source-Code)
 
 ---
 
