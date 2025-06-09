@@ -1,8 +1,8 @@
-# Kawra (KAWRA)
+# KawraTools – Wallets, Daemons & Setup Files
 
-**Kawra** is a SHA-256 Proof-of-Work cryptocurrency built on Bitcoin Core 25.0. Designed with simplicity, fairness, and decentralization in mind, Kawra has a limited fixed supply and predictable emission schedule.
+**Kawra** is a SHA-256 Proof-of-Work cryptocurrency built on Bitcoin Core 25.0. Designed with simplicity, fairness, and decentralization in mind, Kawra has a limited fixed supply and a predictable emission schedule.
 
-This repository contains the full Kawra blockchain node and wallet source code.
+This repository contains precompiled binaries, setup guides, and the full source code archive to help users and developers quickly interact with the Kawra blockchain.
 
 ---
 
@@ -28,127 +28,45 @@ This repository contains the full Kawra blockchain node and wallet source code.
 
 ---
 
-## ⚙️ Sample Configuration (`kawra.conf`)
+## 📦 Available Downloads
 
-Place this in: `~/.kawra/kawra.conf`
-
-```ini
-rpcuser=rpc_kawra
-rpcpassword=dR2oBQ3K1zYMZQtJFZeAerhWxaJ5Lqeq9J2
-rpcbind=127.0.0.1
-rpcallowip=127.0.0.1
-listen=1
-server=1
-txindex=1
-daemon=1
-```
+| File | Description |
+|------|-------------|
+| `kawra-source-code.tar.gz` | Full source code archive (same as Kawra GitHub repo) |
+| `Daemon for Ubuntu Linux.zip` | Precompiled Kawra daemon (`kawrad`) for Ubuntu Linux |
+| `Kawra Linux wallet.tar.gz` | CLI wallet for Ubuntu Linux |
+| `Kawra windows wallet.zip` | Precompiled Windows wallet GUI |
+| `kawra-daemon-windows.zip` | Precompiled Kawra daemon for Windows |
+| `Kawra Node install guide.txt` | Step-by-step guide to running a Kawra full node |
+| `install a mining pool guide.txt` | Guide to setting up a mining pool for Kawra |
 
 ---
 
-## 🧱 Compile Kawra Wallet from Source
+## 🧭 Getting Started
 
-### 🖥️ Linux Wallet Build (Ubuntu Server 22.04)
+Choose what you need:
 
-```bash
-sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install make automake cmake curl g++-multilib libtool binutils-gold \
-bsdmainutils pkg-config python3 patch bison -y
+- 💻 **Run a Wallet**:  
+  Download the appropriate Linux or Windows wallet file.
 
-cd ~/
-mkdir source_code
-cd source_code
-wget "https://github.com/kawracoin/KawraTools/raw/main/kawra-source-code.tar.gz" -O kawra-source-code.tar.gz
-tar -xzvf kawra-source-code.tar.gz
-```
+- 🌐 **Run a Kawra Node**:  
+  Use the daemon for your platform and follow the included install guide.
 
-#### 64-bit Build
-```bash
-PATH=$(echo "$PATH" | sed -e 's/:\/mnt.*//g')
-cd depends
-make HOST=x86_64-pc-linux-gnu
-cd ..
-./autogen.sh
-CONFIG_SITE=$PWD/depends/x86_64-pc-linux-gnu/share/config.site ./configure --prefix=/
-make
-```
-
-#### Optional Cleanup
-```bash
-make clean
-```
-
-#### 32-bit Build
-```bash
-cd depends
-make HOST=i686-pc-linux-gnu
-cd ..
-./autogen.sh
-CONFIG_SITE=$PWD/depends/i686-pc-linux-gnu/share/config.site ./configure --prefix=/
-make
-```
+- ⛏️ **Run a Mining Pool**:  
+  Use the guide provided to set up your own public or private Kawra pool.
 
 ---
 
-### 🪟 Windows Wallet Build (on Ubuntu Server 22.04)
+## 🧰 For Developers
 
-```bash
-sudo apt-get update && sudo apt-get upgrade -y
-sudo apt-get install make automake cmake curl g++-multilib libtool binutils-gold \
-bsdmainutils pkg-config python3 patch bison -y
+Want to build Kawra from source?
 
-cd ~/
-mkdir source_code
-cd source_code
-wget "https://github.com/kawracoin/KawraTools/raw/main/kawra-source-code.tar.gz" -O kawra-source-code.tar.gz
-tar -xzvf kawra-source-code.tar.gz
+Use `kawra-source-code.tar.gz` from this repo or go to the official source repo:
 
-sudo apt-get install g++-mingw-w64-x86-64 -y
-sudo update-alternatives --set x86_64-w64-mingw32-g++ /usr/bin/x86_64-w64-mingw32-g++-posix
-
-cd depends
-make HOST=x86_64-w64-mingw32
-cd ..
-./autogen.sh
-CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site ./configure --prefix=/
-make
-```
-
----
-
-## 🚀 Running Kawra
-
-```bash
-./src/kawrad -daemon
-./src/kawra-cli getnewaddress
-./src/kawra-cli getbalance
-./src/kawra-cli sendtoaddress <address> <amount>
-```
-
----
-
-## 🌐 Network
-
-- **Main Node**: `node1.kawra.org`
-- **Block Explorer**: [https://explorer.kawra.org](https://explorer.kawra.org)
-- **Mining Pool**: [http://pool.kawra.org](http://pool.kawra.org)
-
----
-
-## ✅ Testnet
-
-```bash
-./src/kawrad -testnet -daemon
-```
-
----
-
-## 🤝 Contributing
-
-We welcome community contributions. Fork the repo, create a branch, and submit a pull request.  
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) for details.
+👉 [Kawra Source on GitHub](https://github.com/kawracoin/kawra)
 
 ---
 
 ## 🛡️ License
 
-Kawra is open-source software licensed under the [MIT License](COPYING).
+This repository is distributed under the [MIT License](LICENSE).
